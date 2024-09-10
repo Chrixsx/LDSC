@@ -6,8 +6,8 @@
 conda activate ldsc
 
 # a/ Save file_directory as variables for easy fix (when change file location).
-export APP_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/LD_reg/ldsc"  										                    # LDSC tool directory
-export TUT_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/Data/Summary_Statistic"								              # Reference panel directory
+export APP_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/LD_reg/ldsc"  		 # LDSC tool directory
+export TUT_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/Data/Summary_Statistic"	# Reference panel directory
 export SUMSTATS_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/Data/download_sleepreview_data/sleep_duration" 	# Raw GWAS directory
 export OUT_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/Data/download_sleepreview_data/sleep_duration"		    # Munge output directory 
 
@@ -31,8 +31,8 @@ ${APP_DIR}/munge_sumstats.py \
 
 ##### Step 2: Cross-trait LD score regression with ldsc.py #####
 # a/ Save file_directory as variables for easy fix (when change file location).
-export APP_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/LD_reg/ldsc"										                # LDSC tool directory
-export SUMSTATS_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/Data"									              	    # Munged file directory
+export APP_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/LD_reg/ldsc"	  # LDSC tool directory
+export SUMSTATS_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/Data"			# Munged file directory
 export REF_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/Data/toy_munge_data/eur_w_ld_chr"  				    # European LD scores (from 1000 Genomes) directory
 export OUT_DIR="/stornext/Bioinf/data/lab_bahlo/users/le.c/Data/download_sleepreview_data/sleep_duration" # LDSC outcome directory
 
