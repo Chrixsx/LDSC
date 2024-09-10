@@ -103,7 +103,7 @@ combined_plot +
   annotate("text", x= 7.0, y=10.6, label="GGE subtypes") +
   annotate("text", x=8.4, y=10.6, label= "FE subtypes")
 
-# Save output
+# Step 5: Save output
 ggsave(file.path(ori.path,"LDSCplot.png"), dpi=1000, width = 11, height = 12)
 
 
