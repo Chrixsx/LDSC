@@ -1,5 +1,5 @@
 LD Score Regression to estimate the genetic correlation between a pair of traits.  
-Aim: Estimate the genetic correlation (r2) between epilepsy traits versus other traits (i.e., metabolites/biomarkers, habitual sleep duration, circadian-related)
+Aim: Estimate the genetic correlation (r<sup>2</sup>) between epilepsy traits versus other traits (i.e., metabolites/biomarkers, habitual sleep duration, circadian-related)
 
 Analysis Overview:  
 --Step 1: Format and Clean the raw GWAS Sumstats with munge_sumstats.py  
