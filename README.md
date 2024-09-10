@@ -4,7 +4,10 @@ Example script: refer to LDSC_script_Shortsleep_vs_Epilepsy.sh
 
 Analysis Overview:  
 -- Step 1: Format and Clean the raw GWAS Sumstats with munge_sumstats.py  
--- Step 2: Cross-trait LD score regression with ldsc.py  
+-- Step 2: Cross-trait LD score regression with ldsc.py
+
+Visualization  
+-- Using ggcorplot - refer to LDSC_graph_making_Github.Rmd
 
 ##### Useful sources #####
 LDSC GitHub: https://github.com/bulik/ldsc   
