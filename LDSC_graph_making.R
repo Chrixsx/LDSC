@@ -6,7 +6,6 @@
 # Step 1: Tools and files preparation
 # Loading library.
 library(data.table)
-library(corrplot)
 library(tidyverse)
 library(dplyr)
 library(magrittr)
@@ -18,14 +17,14 @@ library(grid)
 library(rsvg)
 
 # Save data path (directory) for easy fix in case of moving file location.
-ori.path= "/Users/le.c/Library/CloudStorage/OneDrive-TheUniversityofMelbourne/LDSC_project_Sleep_Epi/Combined"
+ori.path= " " # Data path
 
 # Input raw data
 corr.raw <-  fread(file.path(ori.path,"meeting_rg.txt")) %>% select(-c("V1"))      # Remove the V1 column storing traits name
 pval.raw <- fread(file.path(ori.path,"meeting_pvalue.txt")) %>% select(-c("V1")) 
 
 # Desired row name   
-name <- c("All Epilepsy", "Genetic generalized epilepsy", "Childhood absence epilepsy", "Juvenile absence epilepsy", "Juvenile myoclonic epilepsy", "Generalized, with tonic-clonic seizures alone", "Focal epilepsy", "FE with hippocampal sclerosis", "FE lesion (-)", "Febril Seizure")
+name <- c( ) # Traits name in rows
 name <- gsub("\\n", " ", name)
 
 #Creating matrix for corr value
@@ -36,7 +35,7 @@ if (length(name) == nrow(corr.raw)) {
 } else {
   stop("The number of names does not match the number of rows in the data table.")
 }
-print(corr.matrix)                    # Display the matrix to check
+print(corr.matrix)
 
 ## Creating matrix for p-value
 if (length(name) == nrow(corr.raw)) {
@@ -46,7 +45,7 @@ if (length(name) == nrow(corr.raw)) {
 } else {
   stop("The number of names does not match the number of rows in the data table.")
 }
-print(pval.matrix)                    # Display the matrix to check
+print(pval.matrix)
 
 
 # Step 2: Finding P-threshold Using Benjamini-Hochberg to control False discovery rate of multiple testing.
