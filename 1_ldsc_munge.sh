@@ -9,6 +9,7 @@
 #SBATCH --error=/vast/projects/Epilepsy_Metabolites/scripts/LDSC/Lotta2020/_slurm_logs/munge_Lotta2020_%A_%a.err
 #SBATCH --array=1-174%50
 
+# NOTE: LDSC have issue with p_value lower than 1e-300 => Need to cap p_value by changing any p_value <1e-300 to 1e-300
 
 # Load conda environment
 source /home/users/allstaff/le.c/miniconda3/etc/profile.d/conda.sh
